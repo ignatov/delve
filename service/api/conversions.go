@@ -92,6 +92,5 @@ func ConvertLocation(loc proc.Location) Location {
 }
 
 func shortenFilePath(fullPath string) string {
-	workingDir, _ := os.Getwd()
-	return strings.Replace(fullPath, workingDir, ".", 1)
+	return fullPath
 }
